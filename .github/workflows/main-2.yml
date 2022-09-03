@@ -28,3 +28,13 @@ jobs:
       # Runs a single command using the runners shell
       - name: Run a one-line script
         run: echo Hello, world!
+      
+      - name: Azure WebApp
+        uses: Azure/webapps-deploy@v2
+        with:
+          app-name: navi-mumbai
+          publish-profile: ${{ secrets.PUBLISHPROFILE }}
+    
+  
+
+    
